@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .heart {
+            width: 160px;
+            height: 160px;
+            background-image: url("greyheart.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: none;
+        }
+
+        .heart:hover {
+            animation: grow 5s forwards;
+            background-image: url("redheart.png");
+        }
+
+        @keyframes grow {
+            from {
+                width: 160px;
+                height: 160px;
+            }
+            to {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+</body>
+</html>
